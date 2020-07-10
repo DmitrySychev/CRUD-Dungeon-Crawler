@@ -1,4 +1,3 @@
-class Client < ActiveRecord::Base
-    has_many :reviews
-    has_many :dealerships, through: :reviews
+class PlayerTable < ActiveRecord::Base
+    belongs_to :map
 end

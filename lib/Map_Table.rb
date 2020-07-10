@@ -1,4 +1,5 @@
-class Dealership < ActiveRecord::Base
-    has_many :reviews
-    has_many :clients, through: :reviews
+class MapTable < ActiveRecord::Base
+    has_one :player
+    has_many :monstertables
+    has_many :itemtables
 end

@@ -1,4 +1,3 @@
-class Review < ActiveRecord::Base
-    belongs_to :dealership
-    belongs_to :client
+class MonsterTable < ActiveRecord::Base
+    belongs_to :map
 end
