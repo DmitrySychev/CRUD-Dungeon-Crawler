@@ -1,30 +1,35 @@
 PlayerTable.destroy_all
 MonsterTable.destroy_all
 ItemTable.destroy_all
+MapTable.destroy_all
 
-t.integer :HP
-t.integer :STR
-t.integer :item_id
-t.integer :map_id
+p1 = PlayerTable.create(HP: 100, STR: 10, item_id: nil, map_id: 1)
 
-p1 = PlayerTable.create(hp: 100, STR:10, item_id: )
+map1 = MapTable.create(monster_id: nil, item_id: nil, player_id: 1)
+map2 = MapTable.create(monster_id: nil, item_id: nil, player_id: nil)
+map3 = MapTable.create(monster_id: nil, item_id: nil, player_id: nil)
+map4 = MapTable.create(monster_id: nil, item_id: nil, player_id: nil)
+map5 = MapTable.create(monster_id: nil, item_id: nil, player_id: nil)
+map6 = MapTable.create(monster_id: nil, item_id: nil, player_id: nil)
+map7 = MapTable.create(monster_id: 1, item_id: nil, player_id: nil)
+map8 = MapTable.create(monster_id: 2, item_id: nil, player_id: nil)
+map9 = MapTable.create(monster_id: nil, item_id: nil, player_id: nil)
+map10 = MapTable.create(monster_id: nil, item_id: nil, player_id: nil)
+map11 = MapTable.create(monster_id: nil, item_id: nil, player_id: nil)
+map12 = MapTable.create(monster_id: nil, item_id: nil, player_id: nil)
+map13 = MapTable.create(monster_id: nil, item_id: nil, player_id: nil)
+map14 = MapTable.create(monster_id: nil, item_id: nil, player_id: nil)
+map15 = MapTable.create(monster_id: nil, item_id: nil, player_id: nil)
+map16 = MapTable.create(monster_id: nil, item_id: nil, player_id: nil)
 
-map1 = MapTable.create(monster_id: , item_id: , player_id: )
-map2 = MapTable.create(monster_id: , item_id: , player_id: )
-map3 = MapTable.create(monster_id: , item_id: , player_id: )
-map4 = MapTable.create(monster_id: , item_id: , player_id: )
-map5 = MapTable.create(monster_id: , item_id: , player_id: )
-map6 = MapTable.create(monster_id: , item_id: , player_id: )
-map7 = MapTable.create(monster_id: , item_id: , player_id: )
-map8 = MapTable.create(monster_id: , item_id: , player_id: )
-map9 = MapTable.create(monster_id: , item_id: , player_id: )
-map10 = MapTable.create(monster_id: , item_id: , player_id: )
-map11 = MapTable.create(monster_id: , item_id: , player_id: )
-map12 = MapTable.create(monster_id: , item_id: , player_id: )
-map13 = MapTable.create(monster_id: , item_id: , player_id: )
-map14 = MapTable.create(monster_id: , item_id: , player_id: )
-map15 = MapTable.create(monster_id: , item_id: , player_id: )
-map16 = MapTable.create(monster_id: , item_id: , player_id: )
+monster1 = MonsterTable.create(HP: 10, STR: 10, item_id: nil, map_id: 7)
+monster2 = MonsterTable.create(HP: 10, STR: 10, item_id: nil, map_id: 8)
+monster3 = MonsterTable.create(HP: 20, STR: 20, item_id: nil, map_id: 16)
+monster4 = MonsterTable.create(HP: 10, STR: 10, item_id: nil, map_id: nil)
+monster5 = MonsterTable.create(HP: 10, STR: 10, item_id: nil, map_id: nil)
+
+item1 = ItemTable.create(player_id: nil, map_id: 7, monster_id: 1, description: "HP Potion", stats: 50)
+item2 = ItemTable.create(player_id: nil, map_id: 8, monster_id: 2, description: "Steel Sword", stats: 5)
 
 
-monster1 = MonsterTable.create()
+
