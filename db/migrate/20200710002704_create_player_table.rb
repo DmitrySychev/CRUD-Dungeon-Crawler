@@ -3,8 +3,8 @@ class CreatePlayerTable < ActiveRecord::Migration[5.2]
     create_table :player_tables do |t|
       t.integer :HP
       t.integer :STR
-      t.integer :item_id
-      t.integer :map_id
+      t.integer :item
+      t.integer :map
     end
   end
 end

@@ -13,17 +13,16 @@
 ActiveRecord::Schema.define(version: 2020_07_10_015834) do
 
   create_table "item_tables", force: :cascade do |t|
-    t.integer "player_id"
-    t.integer "map_id"
-    t.integer "monster_id"
+    t.integer "players"
+    t.integer "monsters"
     t.string "description"
     t.integer "stats"
   end
 
   create_table "map_tables", force: :cascade do |t|
-    t.integer "monster_id"
-    t.integer "item_id"
-    t.integer "player_id"
+    t.integer "monster"
+    t.integer "item"
+    t.integer "player"
   end
 
   create_table "monster_tables", force: :cascade do |t|
@@ -36,8 +35,8 @@ ActiveRecord::Schema.define(version: 2020_07_10_015834) do
   create_table "player_tables", force: :cascade do |t|
     t.integer "HP"
     t.integer "STR"
-    t.integer "item_id"
-    t.integer "map_id"
+    t.integer "item"
+    t.integer "map"
   end
 
 end

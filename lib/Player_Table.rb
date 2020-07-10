@@ -1,3 +1,5 @@
 class PlayerTable < ActiveRecord::Base
-    belongs_to :map
+    has_many :maps
+    has_many :items, through: :map
+    has_many :monsters, through: :map
 end

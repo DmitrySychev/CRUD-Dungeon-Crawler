@@ -1,5 +1,4 @@
 class ItemTable < ActiveRecord::Base
-    has_many :maptables
-    has_many :monstertables
-    has_many :playertables
+    belongs_to :monster
+    belongs_to :player
 end
