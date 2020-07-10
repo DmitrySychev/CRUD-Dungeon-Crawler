@@ -1,36 +1,40 @@
-PlayerTable.destroy_all
-MonsterTable.destroy_all
-ItemTable.destroy_all
-MapTable.destroy_all
+Player.destroy_all
+Monster.destroy_all
+Map.destroy_all
 
 
-monster1 = MonsterTable.create(HP: 10, STR: 10, item_id: nil, map_id: nil)
-monster2 = MonsterTable.create(HP: 10, STR: 10, item_id: nil, map_id: nil)
-monster3 = MonsterTable.create(HP: 20, STR: 20, item_id: nil, map_id: nil)
-monster4 = MonsterTable.create(HP: 10, STR: 10, item_id: nil, map_id: nil)
-monster5 = MonsterTable.create(HP: 10, STR: 10, item_id: nil, map_id: nil)
+monster1 = Monster.create(HP: 10, STR: 10 )
+monster2 = Monster.create(HP: 10, STR: 10 )
+monster3 = Monster.create(HP: 20, STR: 20 )
+monster4 = Monster.create(HP: 10, STR: 10 )
+monster5 = Monster.create(HP: 10, STR: 10 )
 
-map1 = MapTable.create(monster: nil, item: nil, player: nil)
-map2 = MapTable.create(monster: nil, item: nil, player: nil)
-map3 = MapTable.create(monster: nil, item: nil, player: nil)
-map4 = MapTable.create(monster: nil, item: nil, player: nil)
-map5 = MapTable.create(monster: nil, item: nil, player: nil)
-map6 = MapTable.create(monster: nil, item: nil, player: nil)
-map7 = MapTable.create(monster: monster1.id, item: nil, player: nil)
-# map8 = MapTable.create(monster: nil, item: nil, player: nil)
-# map9 = MapTable.create(monster: nil, item: nil, player: nil)
-# map10 = MapTable.create(monster: nil, item: nil, player: nil)
-# map11 = MapTable.create(monster: nil, item: nil, player: nil)
-# map12 = MapTable.create(monster: nil, item: nil, player: nil)
-# map13 = MapTable.create(monster: nil, item: nil, player: nil)
-# map14 = MapTable.create(monster: nil, item: nil, player: nil)
-# map15 = MapTable.create(monster: nil, item: nil, player: nil)
-# map16 = MapTable.create(monster: nil, item: nil, player: nil)
+map1 = Map.create(discription: "Dimly lit, can only go forward", monster: nil, player: nil)
+map2 = Map.create(discription: "Dimly lit, can only go forward", monster: nil, player: nil)
+map3 = Map.create(discription: "Dimly lit, can only go forward", monster: nil, player: nil)
+map4 = Map.create(discription: "Dimly lit, can only go forward", monster: nil, player: nil)
+map5 = Map.create(discription: "Dimly lit, can only go forward", monster: nil, player: nil)
+map6 = Map.create(discription: "Dimly lit, can only go forward", monster: nil, player: nil)
+map7 = Map.create(discription: "Dimly lit, can only go forward", monster: monster1, player: nil)
+map8 = Map.create(discription: "Dimly lit, can only go forward", monster: monster2, player: nil)
+map9 = Map.create(discription: "Dimly lit, can only go forward", monster: nil, player: nil)
+map10 = Map.create(discription: "Dimly lit, can only go forward", monster: nil, player: nil)
+map11 = Map.create(discription: "Dimly lit, can only go forward", monster: nil, player: nil)
+map12 = Map.create(discription: "Dimly lit, can only go forward", monster: nil, player: nil)
+map13 = Map.create(discription: "Dimly lit, can only go forward", monster: nil, player: nil)
+map14 = Map.create(discription: "Dimly lit, can only go forward", monster: nil, player: nil)
+map15 = Map.create(discription: "Dimly lit, can only go forward", monster: nil, player: nil)
+map16 = Map.create(discription: "Dimly lit, can only go forward", monster: nil, player: nil)
+
+
+p1 = Player.create(HP: 100, STR: 10)
 
 
 # item1 = ItemTable.create(player: nil, monster: monster1, description: "HP Potion", stats: 50)
 # item2 = ItemTable.create(player: nil, monster: monster2, description: "Steel Sword", stats: 5)
 
-# p1 = PlayerTable.create(HP: 100, STR: 10, items: nil, maps: nil)
+# 
 
 
+
+  

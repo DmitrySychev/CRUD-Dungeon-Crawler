@@ -10,33 +10,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_07_10_015834) do
+ActiveRecord::Schema.define(version: 2020_07_10_161157) do
 
-  create_table "item_tables", force: :cascade do |t|
-    t.integer "players"
-    t.integer "monsters"
-    t.string "description"
-    t.integer "stats"
+  create_table "maps", force: :cascade do |t|
+    t.string "discription"
+    t.integer "monster_id"
+    t.integer "player_id"
   end
 
-  create_table "map_tables", force: :cascade do |t|
-    t.integer "monster"
-    t.integer "item"
-    t.integer "player"
-  end
-
-  create_table "monster_tables", force: :cascade do |t|
+  create_table "monsters", force: :cascade do |t|
     t.integer "HP"
     t.integer "STR"
-    t.integer "item_id"
-    t.integer "map_id"
   end
 
-  create_table "player_tables", force: :cascade do |t|
+  create_table "players", force: :cascade do |t|
     t.integer "HP"
     t.integer "STR"
-    t.integer "item"
-    t.integer "map"
   end
 
 end
